@@ -161,6 +161,12 @@ source_set("flutter_linux_sources") {
     "FLUTTER_ENGINE_NO_PROTOTYPES",
   ]
 
+  if (use_wayland_backend) {
+    defines += [
+      "DISALBE_X11_BACKEND",
+    ]
+  }
+
   deps = [
     "//flutter/fml",
     "//flutter/shell/platform/common:common_cpp_enums",
