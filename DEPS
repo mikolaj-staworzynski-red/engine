@@ -243,7 +243,7 @@ deps = {
    Var('dart_git') + '/json_rpc_2.git@7e00f893440a72de0637970325e4ea44bd1e8c8e',
 
   'src/third_party/dart/third_party/pkg/linter':
-   Var('dart_git') + '/linter.git' + '@' + Var('dart_linter_tag'),
+   Var('github_git') + '/dart-lang/linter.git' + '@' + Var('dart_linter_tag'),
 
   'src/third_party/dart/third_party/pkg/logging':
    Var('dart_git') + '/logging.git@575781ef196e4fed4fb737e38fb4b73d62727187',
