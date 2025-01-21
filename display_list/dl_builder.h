@@ -38,6 +38,10 @@ class DisplayListBuilder final : public virtual DlCanvas,
   explicit DisplayListBuilder(const SkRect& cull_rect = kMaxCullRect,
                               bool prepare_rtree = false);
 
+  using ClipOp = DlCanvas::ClipOp;
+  using PointMode = DlCanvas::PointMode;
+  using SrcRectConstraint = DlCanvas::SrcRectConstraint;
+
   ~DisplayListBuilder();
 
   // |DlCanvas|
