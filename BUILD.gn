@@ -31,6 +31,8 @@ config("config") {
   }
   if (is_clang) {
     cflags += [ "-Wunreachable-code" ]
+    cflags += [ "-Wno-invalid-constexpr" ]
+    cflags += [ "-Wno-unused-variable" ]
   }
 }
 
