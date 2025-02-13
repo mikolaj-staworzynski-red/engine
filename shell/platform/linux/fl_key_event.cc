@@ -2,7 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include <cstring>
 #include "flutter/shell/platform/linux/fl_key_event.h"
 
 struct _FlKeyEvent {
